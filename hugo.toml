@@ -52,11 +52,11 @@ defaultContentLanguageInSubdir = true
       subtitle = 'Reference, Tutorials, and Explanations'
 
   [languages.zh-hant]
-    contentDir = 'content/en'
+    contentDir = 'content/zh-hant'
     disabled = false
-    languageCode = 'zh-HANT'
+    languageCode = 'zh-hant'
     languageDirection = 'ltr'
-    languageName = 'English'
+    languageName = '繁體中文'
     title = 'Project Documentation'
     weight = 2
     [languages.zh-hant.params]
@@ -172,6 +172,24 @@ defaultContentLanguageInSubdir = true
           ["Code sample errors", "One or more code samples are incorrect."],
           ["Something else"]
         ]
+
+[params.versionInfo]
+  dropdownMenuText = "Releases"
+  archived = true
+
+[[params.versions]]
+  version = "Next"
+  url = "https://next.syntixi.dev/docs"
+
+  current = true
+
+[[params.versions]]
+  version = "v0.2"
+  url = "https://v0-2.syntixi.dev/docs"
+
+[[params.versions]]
+  version = "v0.3"
+  url = "https://v0-3.syntixi.dev/docs"
 
 [[menu.primary]]
     name  = "Docs"
