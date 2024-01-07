@@ -1,5 +1,5 @@
 baseURL = "/" # (or set via env variable HUGO_BASEURL)
-languageCode = "en-GB"
+languageCode = "en-US"
 title = "Lotus Docs | A Hugo Documentation Theme"
 # theme = "lotusdocs"
 contentDir = "content"
@@ -35,6 +35,32 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
   [markup.goldmark.parser]
     [markup.goldmark.parser.attribute]
       block = true
+
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
+
+[languages]
+  [languages.en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'Project Documentation'
+    weight = 2
+    [languages.en.params]
+      subtitle = 'Reference, Tutorials, and Explanations'
+
+  [languages.zh-hant]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'zh-HANT'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'Project Documentation'
+    weight = 2
+    [languages.zh-hant.params]
+      subtitle = 'Reference, Tutorials, and Explanations'
 
 [params]
 
@@ -153,11 +179,11 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
     identifier = "docs"
     weight = 10
 
-# [[menu.primary]]
-#     name  = "Showcase"
-#     url = "/showcase"
-#     identifier = "showcase"
-#     weight = 20
+[[menu.primary]]
+    name  = "Showcase"
+    url = "/showcase"
+    identifier = "showcase"
+    weight = 20
 
 [[menu.primary]]
     name  = "Community"
